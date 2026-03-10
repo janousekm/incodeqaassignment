@@ -18,7 +18,7 @@ public class IdentitiesPage extends BasePage {
     {
         dataGrid.waitForRow(1, 10);
         dataGrid.clickRow(1);
-        logStep("DataGrid is filtered successfully!");
+        logStep("Successfully opened the first identity");
         return this;
     }
 
