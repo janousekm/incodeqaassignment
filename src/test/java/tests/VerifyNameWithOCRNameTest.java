@@ -19,7 +19,7 @@ public class VerifyNameWithOCRNameTest extends BaseTest {
 
         homePage.navigateTo(MenuItem.SESSIONS);
         String nameValueFromTable = sessionsPage
-                .filterBySessionID(ConfigReader.get("sessionID"))
+                .filterBySessionID(ConfigReader.get("SESSION_ID"))
                 .getFilteredSessionName();
         SingleSessionDetailsPage detailsPage = sessionsPage.openFirstFilteredSession();
         String nameValueFromSession = detailsPage.getOcrFullName();

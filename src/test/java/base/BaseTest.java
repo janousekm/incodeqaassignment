@@ -37,11 +37,11 @@ public class BaseTest {
         // Start browser
         Page page = PlaywrightFactory.initBrowser(browser, Boolean.parseBoolean(headless));
         tlPage.set(page);
-        page.navigate(ConfigReader.get("baseURL"));
+        page.navigate(ConfigReader.get("BASE_URL"));
 
         // Login
         LoginPage login = new LoginPage(page);
-        login.login(ConfigReader.get("email"), ConfigReader.get("password"));
+        login.login(ConfigReader.get("EMAIL"), ConfigReader.get("PASSWORD"));
         page.waitForLoadState(LoadState.NETWORKIDLE);
 
         // Compose a more descriptive test name

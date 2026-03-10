@@ -23,7 +23,7 @@ public class AddFaceToDatabaseTest extends BaseTest {
         SessionsPage sessionsPage = new SessionsPage(getPage());
 
         homePage.navigateTo(MenuItem.SESSIONS);
-        sessionsPage.filterBySessionID(ConfigReader.get("sessionID"));
+        sessionsPage.filterBySessionID(ConfigReader.get("SESSION_ID"));
         name = sessionsPage.getFilteredSessionName();
         SingleSessionDetailsPage detailsPage = sessionsPage.openFirstFilteredSession();
         detailsPage.clickAddFaceToDatabaseButton()

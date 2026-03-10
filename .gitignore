@@ -14,3 +14,6 @@ reports/
 
 # Playwright temp
 playwright-java-*/
+
+# Variables
+data.local.properties
