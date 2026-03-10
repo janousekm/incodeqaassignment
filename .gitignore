@@ -1,0 +1,16 @@
+# Build output
+target/
+
+# IDE
+.idea/
+*.iml
+
+# Reports (generated, not source)
+reports/
+
+# Surefire dumps
+*-jvmRun*.dump
+*-jvmRun*.dumpstream
+
+# Playwright temp
+playwright-java-*/
